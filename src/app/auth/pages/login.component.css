@@ -1,0 +1,19 @@
+.login_content {
+    /*background-image: url(../../../assets/images/almacen.png);*/
+    background-position: inherit;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_content_box {
+    background: #9c9898cc;
+}
+
+.login_content_box h1 {
+    color: #f8f8f8cc;
+}

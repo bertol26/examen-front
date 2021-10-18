@@ -1,0 +1,38 @@
+
+<div class="grid">
+ <div class="col-6">
+     <div class="card">
+        <div class="grid">
+            <div class="col-12">
+               <h1>Registro de alumnos</h1>
+            </div>
+           </div>
+           <form [formGroup]="formAlumno" (ngSubmit)="submit()">
+              <div class="fluid formgrid grid">
+                  <div class="field col-6">
+                      <label for="firstname1">Nombres</label>
+                      <input formControlName="nombres" id="firstname1" type="text" pInputText> 
+                  </div>
+                  <div class="field col-6">
+                      <label for="lastname1">Apellidos</label>
+                      <input formControlName="apellidos" id="lastname1" type="text" pInputText> 
+                  </div>
+                  <div class="field col-6">
+                      <label for="firstname1">Fecha Nacimiento</label>
+                      <input formControlName="fechaNacimiento" id="firstname1" type="text" pInputText placeholder="dd/mm/aaaa"> 
+                  </div>
+                  <div class="field col-6">
+                      <label for="lastname1">Sexo</label>
+                      <input formControlName="sexo" id="lastname1" type="text" pInputText> 
+                  </div>
+              </div>
+              <div class="grid">
+               <div class="col-6">
+                <p-button class="pr-2" type="submit">Guardar</p-button>
+                <p-button type="button" class="p-button-danger" (click)="back()">Regresar</p-button>
+               </div>
+              </div>
+            </form>
+     </div>
+ </div>
+</div>

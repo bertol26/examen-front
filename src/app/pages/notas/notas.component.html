@@ -1,0 +1,41 @@
+
+ <div class="grid">
+   <div class="col-8">
+    <div class="card">
+        <form [formGroup]="formNotas" (ngSubmit)="submit()">
+            <div class="fluid">
+                <div class="field">
+                    <label for="firstname1">Practica 1</label><br>
+                    <input formControlName="practica1" id="firstname1" type="number" pInputText> 
+                </div>
+                <div class="field">
+                    <label for="lastname1">Practica 2</label><br>
+                    <input formControlName="practica2" id="lastname1" type="number" pInputText> 
+                </div>
+                <div class="field">
+                    <label for="lastname1">Practica 3</label><br>
+                    <input formControlName="practica3" id="lastname1" type="number" pInputText> 
+                </div>
+                <div class="field">
+                    <label for="lastname1">Parcial</label><br>
+                    <input formControlName="parcial" id="lastname1" type="number" pInputText> 
+                </div>
+                <div class="field">
+                    <label for="lastname1">Final</label> <br>
+                    <input formControlName="final" id="lastname1" type="number" pInputText> 
+                </div>
+                <div class="field">
+                    <label for="lastname1">Promedio Final</label>
+                    <input formControlName="promedioFinal" id="lastname1" type="number" pInputText> 
+                </div>
+            </div>
+            <div class="grid">
+             <div class="col-12">
+               <p-button class="pr-3" type="submit">Grabar</p-button>
+               <p-button (click)="ref.close();">Cancelar</p-button>
+             </div>
+            </div>
+        </form>
+    </div>
+   </div>
+ </div>
